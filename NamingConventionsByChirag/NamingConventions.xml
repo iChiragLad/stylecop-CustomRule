@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SourceAnalyzer Name="Naming Conventions By Chirag">
+  <Description>
+    These custom rules provide extensions to the ones provided with StyleCop.
+  </Description>
+  <Rules>
+    <Rule Name="NamingConventionsString" CheckId="EX5555">
+      <Context>String variable should start with 's' and second letter capital.</Context>
+      <Description>String variable should start with 's' and second letter capital.</Description>
+    </Rule>
+    <Rule Name="NamingConventionsBool" CheckId="EX6666">
+      <Context>Bool variable should start with 'b' and second letter capital.</Context>
+      <Description>Bool variable should start with 'b' and second letter capital.</Description>
+    </Rule>
+    <Rule Name="CreatedByRule" CheckId="EX7777">
+      <Context>Should only be created by Chirag Lad.</Context>
+      <Description>Should only be created by Chirag Lad.</Description>
+    </Rule>
+  </Rules>
+</SourceAnalyzer>

@@ -1,0 +1,7 @@
+D:\Do not touch\StyleCop Custom Rule Practice\StyleCopNewRule\NamingConventionsByChirag\bin\Debug\NamingConventionsByChirag.dll
+D:\Do not touch\StyleCop Custom Rule Practice\StyleCopNewRule\NamingConventionsByChirag\bin\Debug\NamingConventionsByChirag.pdb
+D:\Do not touch\StyleCop Custom Rule Practice\StyleCopNewRule\NamingConventionsByChirag\bin\Debug\StyleCop.CSharp.dll
+D:\Do not touch\StyleCop Custom Rule Practice\StyleCopNewRule\NamingConventionsByChirag\bin\Debug\StyleCop.dll
+D:\Do not touch\StyleCop Custom Rule Practice\StyleCopNewRule\NamingConventionsByChirag\obj\Debug\NamingConventionsByChirag.csprojResolveAssemblyReference.cache
+D:\Do not touch\StyleCop Custom Rule Practice\StyleCopNewRule\NamingConventionsByChirag\obj\Debug\NamingConventionsByChirag.dll
+D:\Do not touch\StyleCop Custom Rule Practice\StyleCopNewRule\NamingConventionsByChirag\obj\Debug\NamingConventionsByChirag.pdb
