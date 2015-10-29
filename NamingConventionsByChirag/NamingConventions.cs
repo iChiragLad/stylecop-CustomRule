@@ -72,30 +72,34 @@ namespace NamingConventionsByChirag
             CsDocument csharpdocument = (CsDocument)element.Document;
             string commentLine = string.Empty;
 
-            string disp = "Hello";
+            // string disp = "Hello";
 
             for (var tokenNode = csharpdocument.Tokens.First; tokenNode != null; tokenNode = tokenNode.Next)
             {
                 if (tokenNode.Value.CsTokenType == CsTokenType.SingleLineComment)
                 {
                     commentLine = tokenNode.Value.Text.ToString();
-                    disp = disp + "\n" + commentLine;
+                    // disp = disp + "\n" + commentLine;
                     ValidateCommentForCreatedByElement(commentLine, parentElement);
                 }
             }
-            System.IO.File.WriteAllText(@"D:\yoyoyo.txt", disp);
+            // System.IO.File.WriteAllText(@"D:\yoyoyo.txt", disp);
             return true;
         }
 
         private void ValidateCommentForCreatedByElement(string commentLine, CsElement parentElement)
         {
-            if ((commentLine.Substring(0, commentLine.Length - 1) == "CreatedBy"))
+            if (commentLine.Contains("CreatedBy"))
             {
-                if (!(commentLine.Substring(0, commentLine.Length - 1) == "Chirag Lad."))
+                if (!commentLine.Contains("Chirag Lad."))
                 {
-                    //this.AddViolation(parentElement, "CreatedByRule", "Should only be created by Chirag Lad.");
-                    System.IO.File.WriteAllText(@"D:\yoyoyo2.txt", "hit hua");
-
+                    try
+                    {
+                        this.AddViolation(parentElement.FindParentElement(), "CreatedByRule", "Should only be created by Chirag Lad.");
+                    }
+                    catch (Exception ex)
+                    {
+                    }
                 }
             }
         }
